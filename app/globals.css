@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #131313;
+  --color-surface: #131313;
+  --color-surface-container-low: #1b1b1b;
+  --color-surface-container-high: #2a2a2a;
+  --color-on-surface: #e2e2e2;
+  --color-on-surface-variant: #e9bcb9;
+  --color-primary: #ffb3af;
+  --color-primary-container: #ff5357;
+  --color-secondary: #00f2ff;
+  --color-secondary-container: #006a70;
+  --color-outline: #b08784;
+  --color-outline-variant: #5f3e3d;
+  --color-terminal-red: #ff0033;
+  --color-terminal-cyan: #00f2ff;
+
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body selection:bg-primary-container selection:text-white overflow-x-hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+@layer utilities {
+  .glitch-text {
+    text-shadow: 2px 0 #ff0033, -2px 0 #00f2ff;
+  }
+
+  .scanline-overlay {
+    background: linear-gradient(to bottom, transparent 50%, rgba(255, 0, 51, 0.05) 50%);
+    background-size: 100% 4px;
+  }
+
+  .terminal-glow-red {
+    box-shadow: 0 0 15px rgba(255, 0, 51, 0.2);
+  }
+
+  .terminal-glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+  }
+
+  .glass-card {
+    @apply backdrop-blur-xl bg-surface-container-low/80 border border-white/5;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.animate-terminal-blink::after {
+  content: "█";
+  animation: blink 1s step-start infinite;
+}
