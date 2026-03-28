@@ -94,11 +94,11 @@ export const HeroScreen: React.FC = () => {
             <div className="absolute inset-20 border border-terminal-red/20 rotate-12"></div>
             <div className="w-full h-full relative overflow-hidden">
               <Image 
-                src="https://picsum.photos/seed/architect/800/800"
-                alt="Digital Abstract"
+                src="/Deepak.png"
+                alt="Deepak Bagada"
                 fill
-                className="object-cover mix-blend-screen opacity-70 grayscale contrast-150"
-                referrerPolicy="no-referrer"
+                className="object-cover opacity-90 contrast-110 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+                priority
               />
             </div>
             <div className="absolute top-0 right-0 p-2 md:p-4 border-t border-r border-terminal-cyan/40 text-[8px] md:text-[9px] font-headline text-terminal-cyan space-y-1 bg-black/40 backdrop-blur-md">

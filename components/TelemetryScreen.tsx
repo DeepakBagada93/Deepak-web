@@ -65,17 +65,13 @@ export const TelemetryScreen: React.FC = () => {
       {/* 3D GLOBE CONTAINER */}
       <div className="flex-1 relative flex items-center justify-center min-h-[500px] lg:min-h-screen">
         <div className="relative w-[300px] h-[300px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px]">
-          <motion.div 
-            animate={{ rotate: 360 }}
-            transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
-            className="absolute inset-0 rounded-full border border-terminal-cyan/20 shadow-[0_0_100px_rgba(0,242,255,0.1)]"
-          >
+          <div className="absolute inset-0 rounded-full border border-terminal-cyan/20 shadow-[0_0_100px_rgba(0,242,255,0.1)]">
             <Image 
-              src="https://picsum.photos/seed/globe/1000/1000"
-              alt="Globe"
+              src="/data.png"
+              alt="Global Data Visualization"
               fill
-              className="object-contain mix-blend-screen opacity-60 grayscale brightness-150 contrast-125"
-              referrerPolicy="no-referrer"
+              className="object-contain mix-blend-screen opacity-80 brightness-110 contrast-125 shadow-[0_0_50px_rgba(0,242,255,0.2)]"
+              priority
             />
             
             {/* Pulsing Markers */}
@@ -100,7 +96,7 @@ export const TelemetryScreen: React.FC = () => {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
 
         {/* POPUP WINDOW - Responsive positioning */}
