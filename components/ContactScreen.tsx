@@ -77,27 +77,25 @@ while(active) {
             </div>
           </div>
 
-          <div className="relative w-full aspect-video bg-surface-container-low overflow-hidden group">
+          <div className="relative w-full aspect-video bg-surface-container-low overflow-hidden group border border-outline-variant/10">
             <Image 
-              src="https://picsum.photos/seed/cables/1200/800"
-              alt="Cables"
+              src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200"
+              alt="Server Room Infrastructure"
               fill
               className="w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 transition-all duration-700"
-              referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
-            <div className="absolute top-4 left-4 font-headline text-[9px] text-terminal-cyan bg-[#131313]/80 px-2 py-1 border border-terminal-cyan/20">ENC_V4.2.0</div>
+            <div className="absolute top-4 left-4 font-headline text-[9px] text-terminal-cyan bg-[#131313]/80 px-2 py-1 border border-terminal-cyan/20">INFRA_V4.2.0</div>
           </div>
         </div>
 
-        <div className="w-full lg:w-[450px] relative">
-          <div className="bg-surface-container-low p-2 relative overflow-hidden backdrop-blur-md border border-outline-variant/10 terminal-glow-red aspect-[3/4]">
+        <div className="w-full lg:w-[450px] relative mt-12 lg:mt-0">
+          <div className="bg-surface-container-low p-2 relative overflow-hidden backdrop-blur-md border border-outline-variant/10 terminal-glow-red aspect-[3/4] md:aspect-auto md:h-[600px] lg:h-[700px]">
             <Image 
-              src="https://picsum.photos/seed/terminal-data/800/1200"
-              alt="Terminal Data"
+              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=800"
+              alt="Terminal Interface and Data"
               fill
-              className="object-cover grayscale brightness-50 contrast-125"
-              referrerPolicy="no-referrer"
+              className="object-cover grayscale brightness-50 contrast-125 hover:brightness-75 transition-all duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent opacity-60"></div>
             <div className="absolute bottom-6 left-6 right-6">

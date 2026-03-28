@@ -50,17 +50,20 @@ export const MissionScreen: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="md:col-span-12 lg:col-span-5 relative group mt-8 lg:mt-0">
-            <div className="absolute -top-4 -left-4 w-12 h-12 border-t-2 border-l-2 border-terminal-cyan"></div>
-            <div className="bg-surface-container-low p-2 border border-outline-variant/10 shadow-[10px_10px_0px_#1b1b1b] md:shadow-[20px_20px_0px_#1b1b1b] transition-all duration-500 group-hover:shadow-[0_0_30px_rgba(0,242,255,0.2)]">
+          <div className="md:col-span-12 lg:col-span-5 relative group mt-12 lg:mt-0 px-4 md:px-0">
+            <div className="absolute -top-4 -left-4 w-12 h-12 border-t-2 border-l-2 border-terminal-cyan hidden md:block"></div>
+            <div className="bg-surface-container-low p-2 border border-outline-variant/10 shadow-[10px_10px_0px_#1b1b1b] md:shadow-[20px_20px_0px_#1b1b1b] transition-all duration-500 group-hover:shadow-[0_0_30px_rgba(0,242,255,0.2)] relative">
               <Image 
-                src="https://picsum.photos/seed/deepak-work/800/1000"
-                alt="Work"
+                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000"
+                alt="Cybersecurity and Code"
                 width={800}
                 height={1000}
-                className="w-full h-[300px] md:h-[450px] object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
-                referrerPolicy="no-referrer"
+                className="w-full h-[300px] md:h-[450px] lg:h-[550px] object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
+                priority
               />
+              <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md border border-terminal-cyan/30 p-2 font-headline text-[8px] text-terminal-cyan uppercase tracking-widest hidden sm:block">
+                SYSTEM_VISUAL_01
+              </div>
             </div>
           </div>
         </div>

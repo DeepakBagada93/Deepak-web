@@ -12,7 +12,7 @@ export const ProjectArchive: React.FC = () => {
       title: 'SAAS_NEXT_PLATFORM',
       date: '2024.12.01',
       type: 'FOUNDER',
-      image: 'https://picsum.photos/seed/saas/1200/800',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200',
       color: 'cyan',
     },
     {
@@ -20,7 +20,7 @@ export const ProjectArchive: React.FC = () => {
       title: 'AI_AGENT_WORKFLOWS',
       date: '2024.10.15',
       type: 'AI_DEV',
-      image: 'https://picsum.photos/seed/ai-agent/800/600',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
       color: 'red',
     },
     {
@@ -28,7 +28,7 @@ export const ProjectArchive: React.FC = () => {
       title: 'PERFORMANCE_AUDIT_TOOL',
       date: '2024.08.20',
       type: 'WEB_DEV',
-      image: 'https://picsum.photos/seed/audit/800/600',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
       color: 'cyan',
     },
     {
@@ -36,7 +36,7 @@ export const ProjectArchive: React.FC = () => {
       title: 'CONVERSION_DRIVEN_FUNNELS',
       date: '2024.06.10',
       type: 'MARKETING',
-      image: 'https://picsum.photos/seed/funnel/1200/600',
+      image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1200',
       color: 'red',
     },
   ];

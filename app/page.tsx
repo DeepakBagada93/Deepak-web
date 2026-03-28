@@ -11,6 +11,7 @@ import { ProjectArchive } from '@/components/ProjectArchive';
 import { MissionScreen } from '@/components/MissionScreen';
 import { TelemetryScreen } from '@/components/TelemetryScreen';
 import { ContactScreen } from '@/components/ContactScreen';
+import { AnimatedBackground } from '@/components/AnimatedBackground';
 
 import { Terminal, Layers, BarChart3, Lock, Network } from 'lucide-react';
 
@@ -93,6 +94,8 @@ export default function Page() {
             </div>
 
             <Footer />
+            
+            <AnimatedBackground />
 
             {/* Mobile Bottom Navigation */}
             <div className="fixed bottom-0 left-0 w-full h-16 bg-[#131313]/90 backdrop-blur-xl border-t border-white/10 flex justify-around items-center z-50 lg:hidden">
